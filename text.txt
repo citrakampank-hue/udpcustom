@@ -1,0 +1,23 @@
+sudo ./install-udp-custom-server.sh \
+  --work-dir /root/udp-custom \
+  --binary /root/udp-custom-server \
+  --config /root/server.json \
+  --listen :36712 \
+  --auto-iptables \
+  --iptables-ranges 1-65535 \
+  --iptables-exclude 5300,7300 \
+  --enable \
+  --start
+  
+  ePro Dev Team:
+mode ada 2 jenis disana om
+"mode": "password",
+dan
+"mode": "pam",
+
+mode = password itu, om tambahkan manual user dan password di json servernya
+"users": {
+      "userDemo": "change-me-pass"
+    }
+
+kl mode pam dia baca user systemnya

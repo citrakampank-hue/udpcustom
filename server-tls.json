@@ -1,0 +1,19 @@
+{
+  "listen": ":36712",
+  "up": "100 Mbps",
+  "down": "100 Mbps",
+  "disable_udp": false,
+  "tls": {
+    "cert_file": "/etc/letsencrypt/live/udp.example.com/fullchain.pem",
+    "key_file": "/etc/letsencrypt/live/udp.example.com/privkey.pem"
+  },
+  "auth": {
+    "mode": "password",
+    "users": {
+      "demo": "change-me"
+    }
+  },
+  "stream_buffer": 16777216,
+  "receive_buffer": 41943040,
+  "max_conn_client": 1024
+}
